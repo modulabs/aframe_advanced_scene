@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <h3>Advanced Scene Practice</h3>
+        <p>00: 이미지와 카메라 셋팅, 한글 잘 되나요?</p>
+        <a-scene>
+            <a-assets>
+                <img id="ai" 
+                     crossorigin="" 
+                     src="https://33.media.tumblr.com/avatar_663cb9b529b3_128.png">
+            </a-assets>
+            <a-image look-at="#player"
+                     src="#ai"
+                     transparent="true"
+                     position="0 1.8 -4">
+            </a-image>
+            <a-camera id="player"
+                      position="0 1.8 0">
+            </a-camera>
+        </a-scene>
+    </body>    
+</html>
